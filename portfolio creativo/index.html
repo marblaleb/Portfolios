@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio Creativo</title>
+</head>
+
+<body>
+    <header>
+        <img src="" class="banner">
+        <a href="#" class="logo "> Bronco/Calambre </a>
+        <nav>
+            <ul>
+                <li><a href="#fotos">Mi marca</a></li>
+                <li><a href="#port">Portfolio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#form">Formulario</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="uno" id="fotos">
+            <h2 class="tituloseccion">Mis Fotos.</h2>
+            <article>
+                
+                <div class="imagenes">
+                <figure >
+                    <picture >
+                        <source media="(min-width:700px)" srcset="">
+                        <source media="(max-width:800px)" srcset="">
+                        <img id="f1" src="./images/pexels-anait-film-11846281.jpg" alt="Foto1">
+                    </picture>
+                    <figcaption>Foto en blanco y negro</figcaption>
+                </figure>
+                <figure >
+                    <picture>
+                        <source media="(min-width:700px)" srcset="">
+                        <source media="(max-width:800px)" srcset="">
+                        <img if="f2" src="./images/pexels-nerosable-13081406.jpg" alt="Foto1">
+                    </picture>
+                    <figcaption>Foto en blanco y negro</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source media="(min-width:700px)" srcset="">
+                        <source media="(max-width:800px)" srcset="">
+                        <img  id="f3" src="./images/pexels-elena-rubtsova-15764525.jpg" alt="Foto1">
+                    </picture>
+                    <figcaption>Foto en blanco y negro</figcaption>
+                </figure>
+            </div>
+
+            </article>
+        </section>
+
+
+
+
+
+
+        <section class="dos" id="port">
+            <h2 class="tituloseccion">Portfolio.</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Dolores ab obcaecati animi temporibus?</p>
+                <p>Itaque nobis assumenda inventore molestiae.</p>
+                <p>Praesentium quae tenetur porro mollitia!</p>
+            </article>
+        </section>
+
+
+        <section class="tres" id="proyectos">
+            <h2 class="tituloseccion">Proyectos.</h2>
+            <article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tarifas</th>
+                            <th>Standard</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Sesión Fotos</th>
+                            <th>50$</th>
+                            <th>90$</th>
+                        </tr>
+
+                        <tr>
+                            <th>Creación Web</th>
+                            <th>100$</th>
+                            <th>200$</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+
+        <section class="cuatro" id="form">
+            <h2 class="tituloseccion">Formulario.</h2>
+            <article>
+
+                <form action="mailto:marcoblaleb@gmail.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="nombre"><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="email"><br>
+
+                    <label for="pais">País</label>
+                    <select name="pais" id="pais">
+                        <option value="Es">España</option>
+                        <option value="Mex">México</option>
+                        <option value="Pe">Perú</option>
+                        <option value="Arg">Argentina</option>
+                        <option value="EEUU">EEUU</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Servicios</legend>
+                    <label for="servicio">Tipo de servicio</label>
+                    <input type="radio" name="servicio" id="web"><label for="web">Creación web</label>
+                    <input type="radio" name="servicio" id="foto"><label for="goto">Sesión de fotos</label>
+                    <input type="radio" name="servicio" id="grafic"><label for="grafic">Edición de vídeo</label><br>
+
+                    <label for="cliente">Tipo de cliente</label>
+                    <input type="checkbox" name="particular" id="particular"><label for="particular">Particular</label>
+                    <input type="checkbox" name="empresa" id="empresa"><label for="empresa">Empresa</label> <br>
+
+                    <label for="motivos">Motivos Contratación</label>
+                    <textarea name="motivos" id="motivos" cols="30" rows="10"></textarea><br>
+
+
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+
+
+
+
+                </form>
+
+
+
+
+
+            </article>
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <p>Autor: Marco Blanco Lebrón</p>
+        <p>Proyecto: Portofolio creativo</p>
+        <div id="UpButton"><a href="#">^</a></div>
+    </footer>
+
+
+
+</body>
+
+</html>

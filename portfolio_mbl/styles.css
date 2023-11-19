@@ -1,0 +1,420 @@
+@import url(https://db.onlinewebfonts.com/c/17241fb9c2ffb3ec11eba762e771435f?family=Suisse+Int%27l+Book);
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Suisse Int'l Book";
+    background: black;
+    color: white;
+    line-height: 1.5;
+    font-size: 0.875rem;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 2.5%;
+    width: 95%;
+    z-index: 999;
+    background: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    border-top: thin solid white;
+    margin-top: 2rem;
+    z-index: 999;
+}
+
+nav .menu .itemMenu {
+
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+nav .menu .itemMenu a:hover {
+
+    color: rgb(241, 241, 105);
+    transition: color 1s ease-out;
+
+}
+
+
+
+/* //SECCION 1 */
+
+
+.block1 {
+    z-index: -1;
+    display: grid;
+    width: 99vw;
+    height: 100vh;
+    grid-template-areas:
+        'left center right'
+        'left center right'
+        'left center right'
+        'left center right';
+
+    border-bottom: thin solid white;
+
+}
+
+.left {
+    grid-area: left;
+    justify-self: center;
+    align-self: end;
+    font-size: 25rem;
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+
+}
+
+.center {
+    grid-area: center;
+
+}
+
+.min {
+    font-size: 1.2rem;
+    font-weight: 50;
+    padding: 2rem;
+    margin: 0;
+    text-transform: uppercase;
+
+}
+
+.max {
+    font-size: 25rem;
+}
+
+.right {
+    grid-area: right;
+    justify-self: center;
+    align-self: end;
+    font-size: 25rem;
+}
+
+
+/* SECCION2 */
+
+
+.block2 {
+    display: grid;
+    width: 99vw;
+    height: 100vh;
+    grid-template-areas:
+        'left right'
+        'left right'
+        'left right'
+        'left right';
+
+    border-bottom: thin solid white;
+
+}
+
+.container-videos {
+    grid-area: left;
+    /* border: thin solid white; */
+}
+
+.container-list {
+    grid-area: right;
+    /* border: thin solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.element {
+    display: flex;
+    width: 50%;
+    border-bottom: thin solid rgba(255, 255, 255, 0.476);
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    padding: 1rem;
+
+
+    font-weight: thin;
+    margin: 2rem;
+    position: relative;
+
+  
+
+
+
+
+
+}
+
+.element:before {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+
+
+
+.element:hover:before{
+    width: 100%;
+
+}
+
+
+
+
+.element .fecha {
+    align-self: start;
+
+}
+
+.element .nombre {
+    margin: auto;
+
+}
+
+.element .nombre .small {
+    opacity: 0.7;
+    font-size: 0.7rem;
+
+}
+
+
+
+
+
+/* VIDEOS SECCION */
+
+
+.container-videos{
+    display: flex;
+    width: 70%;
+    height: 50%;
+    margin: auto;
+    visibility: hidden;
+    background-image: url("");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: 2s infinite ease-in-out mover;
+    transition: animation 2s;
+
+    
+    
+
+
+}
+
+
+@keyframes mover{
+    50%{
+        transform: translateY(10%)
+    }
+
+    100%{
+        transform: translateY(0%s);
+    }
+
+}
+/* 
+#video{
+    width: 100%;
+    border: thin solid white;
+    background-image: url("images/game.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+} */
+
+
+
+
+.active{
+    visibility: visible;
+}
+
+
+
+/* SECCION 3 */
+
+.block3{
+
+    display: flex;
+    width: 99vw;
+    height: 70vh; 
+
+    border-bottom: thin solid white;
+
+}
+
+.description{
+
+    width: 50%;
+    height: 100%;
+    display:flex;
+     
+    font-size: 4em;
+    align-items: center;
+}
+
+.tt{
+    margin: 1em;
+    font-weight: bold;
+}
+
+.skills{
+    display:flex;
+    
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+.tabla{
+    list-style: none;
+    font-size: 1em;
+    text-transform: capitalize;
+    padding: 2em;
+    
+    
+}
+
+.tabla{
+    list-style: none;
+    font-size: 1em;
+    text-transform: capitalize;
+    padding: 3em;
+    
+    
+}
+
+#tit{
+    margin-top:0.6em;
+    margin-bottom: 2em;
+    font-size: 1.4em;
+}
+
+#tit2{
+    margin-top:0;
+    margin-bottom: 2.2em;
+    font-size: 1.4em;
+
+    
+
+}
+
+
+
+/* 
+FOOTER */
+
+
+.container_f{
+    overflow: hidden;
+}
+
+.contact {
+    white-space: nowrap;
+    color: white;
+    font-size: 13em;
+    transition: color 1s;
+
+    margin-top: 1em;
+    margin-bottom: 0.4em;
+    text-transform: capitalize;
+    
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 20s linear infinite;
+  -webkit-animation: my-animation 20s linear infinite;
+  animation: my-animation 20s linear infinite;
+    
+  }
+
+  .contact:hover{
+    color: rgb(247, 247, 111);
+  }
+  
+ 
+  
+  
+
+  
+  @keyframes my-animation {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-230%);
+    }
+  }
+
+
+
+
+/* ANIMATIONS JAVASCRIPT */
+
+.animated{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.showY{
+    animation: subir 1s;
+}
+
+@keyframes subir{
+    0%{
+        transform: translateY(60%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}

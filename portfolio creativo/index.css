@@ -1,0 +1,319 @@
+@import url('https://fonts.cdnfonts.com/css/silka');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: whitesmoke;
+
+}
+
+
+
+/* HEADER */
+
+header {
+    position: sticky;
+    display: flex;
+    background-color: black;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 6.5vh;
+    z-index: 10;
+
+
+}
+
+.logo {
+    text-decoration: none;
+    text-align: center;
+    margin-left: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+
+
+}
+
+nav ul {
+    display: flex;
+    text-align: center;
+    margin-right: 20px;
+    align-items: center;
+    align-items: stretch;
+
+
+
+}
+
+nav ul li {
+    display: flex;
+    list-style: none;
+    border: 2px solid white;
+    align-items: center;
+    border-right-width: 1px;
+
+
+
+
+}
+
+nav ul li a {
+    display: flex;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 1.5em;
+    transition:1s;
+
+
+
+}
+
+nav ul li:hover {
+    background-color: #bfbfbf;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+
+
+
+
+/* MAIN */
+
+section {
+    width: 70%;
+    margin: 20vw;
+
+
+
+}
+
+.uno {
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "t t t t t t"
+        "f f f f f f";
+    clip-path: polygon(0 16%, 100% 0, 100% 86%, 0 100%);
+    justify-content: center;
+
+}
+
+
+.tituloseccion {
+    grid-area: t;
+    text-align: center;
+    margin: 3em;
+    font-size: 3em;
+    letter-spacing: 0.3em;
+
+}
+
+.imagenes {
+    grid-area: f;
+    display: flex;
+    object-fit: contain;
+    margin-bottom: 10em;
+    border: 3px solid black;
+}
+
+
+
+
+
+.uno img {
+    width: 20vw;
+    height: 60vh;
+
+}
+
+
+
+
+
+
+
+.dos {
+    background-color: white;
+    text-align: center;
+    padding: 5em;
+    clip-path: polygon(0 0, 100% 13%, 100% 100%, 0 88%);
+
+}
+
+.dos p {
+    font-size: 5em;
+}
+
+
+
+
+.tres {
+    
+    background-color: white;
+    padding: 5em;
+    clip-path: polygon(0 18%, 100% 0, 100% 86%, 0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tres>article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+table {
+    
+    margin-bottom: 3em;
+    border: 3px solid grey;
+    font-size: 2em;
+}
+
+th {
+
+    border: 3px solid grey;
+    font-size: 2em;
+
+}
+
+.cuatro{
+    margin-top: 3em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cuatro article{
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+   
+
+    
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 5em;
+    font-size: 3em;
+    text-align: center;
+    padding: 1em;
+    background-color: black;
+    color: whitesmoke;
+
+}
+
+
+
+#UpButton {
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    position: fixed;
+    height: 50px;
+    background-color: #fff;
+    z-index: 20;
+    font-size: 50px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    animation: botonsubir 1s ease 1s infinite normal;
+}
+
+#UpButton>a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#UpButton>a:visited {
+    color: black;
+    text-decoration: none
+}
+
+#UpButton>a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: .7vw;
+}
+
+@keyframes botonsubir {
+    0% {
+        transform: translateY(-5px);
+
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* TABLA */
+
+fieldset{
+    padding: 2vw;
+    margin-top: .5vw;
+}
+
+input,label,textarea{
+    margin: .2vw;
+}
+
+fieldset>p{
+    margin-top: 1vw;
+}
+
+#opcion2-4,#opciones{
+    margin-bottom: 1vw;
+}
+
+input,textarea{
+    padding: .5vw;
+}
